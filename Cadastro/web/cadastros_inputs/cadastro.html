@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inserir dados</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS interno -->
+        <style>
+            /* Corpo da página */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            /* Container do formulário */
+            form {
+                background-color: #ffffff;
+                padding: 30px 40px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                width: 100%;
+                max-width: 400px;
+            }
+
+            h1 {
+                text-align: center;
+                color: #2c3e50;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            input[type="tel"],
+            input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1em;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: #3498db;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #2980b9;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="dados.jsp">
+            <h1>Insira seus dados aqui</h1>
+            <p> Nome: <input type="text" name="name_user"> </p>  
+            <p> CPF: <input type="number" name="cpf_user"> </p>  
+            <p> Renda Mensal: <input type="number" name="renda_user"> </p>  
+            <p> Profissão: <input type="text" name="profissao_user"> </p>  
+            <p> Endereço completo: <input type="text" name="endereco_user"> </p>  
+            <p> Telefone: <input type="tel" name="telefone_user"> </p>  
+            <p> GMAIL/EMAIL: <input type="email" name="email_user"> </p>  
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </body>
+</html>
